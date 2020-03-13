@@ -19,4 +19,14 @@ public class Maximum {
         }
         return maximum;
     }
+    //LOGIC FOR FIND STRING MAXIMUM VALUE
+    public static String MaximumStringValue(String[] intArray) {
+        String maximum="a";
+        for (String index : intArray) {
+            if (index.compareTo(maximum) > 0) {
+                maximum = index;
+            }
+        }
+        return maximum;
+    }
 }
