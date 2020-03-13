@@ -8,12 +8,20 @@ public class TestMaximum {
     public void givenThreeInteger_WhenProper_ShouldReturnMaximum() {
         value = new Maximum();
         Integer intArray[] = {10, 20, 30};
-        Assert.assertEquals(intArray[2],Maximum.findMaximumNumber(intArray));
+        Assert.assertEquals(intArray[2], Maximum.findMaximumNumber(intArray));
     }
+
     @Test
     public void givenThreeFloat_WhenProper_ShouldReturnMaximum() {
         value = new Maximum();
         Float intArray[] = {40.0f, 5.0f, 30.f};
-        Assert.assertEquals(intArray[0],Maximum.MaximumFloatValue(intArray));
+        Assert.assertEquals(intArray[0], Maximum.MaximumFloatValue(intArray));
+    }
+
+    @Test
+    public void givenThreeString_WhenProper_ShouldReturnMaximum() {
+        value = new Maximum();
+        String intArray[] = {"z", "a", "c"};
+        Assert.assertEquals(intArray[0], Maximum.MaximumStringValue(intArray));
     }
 }
