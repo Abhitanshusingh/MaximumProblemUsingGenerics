@@ -9,9 +9,10 @@ public class Maximum {
         }
         return maximum;
     }
+
     //LOGIC FOR FIND FLOAT MAXIMUM VALUE
     public static Float MaximumFloatValue(Float[] intArray) {
-        Float maximum=0f;
+        Float maximum = 0f;
         for (Float index : intArray) {
             if (index.compareTo(maximum) > 0) {
                 maximum = index;
@@ -19,9 +20,10 @@ public class Maximum {
         }
         return maximum;
     }
+
     //LOGIC FOR FIND STRING MAXIMUM VALUE
     public static String MaximumStringValue(String[] intArray) {
-        String maximum="a";
+        String maximum = "a";
         for (String index : intArray) {
             if (index.compareTo(maximum) > 0) {
                 maximum = index;
