@@ -14,14 +14,14 @@ public class TestMaximum {
     @Test
     public void givenThreeFloat_WhenProper_ShouldReturnMaximum() {
         value = new Maximum();
-        Float intArray[] = {40.0f, 5.0f, 30.f};
-        Assert.assertEquals(intArray[0], Maximum.MaximumFloatValue(intArray));
+        Float floatArray[] = {40.0f, 5.0f, 30.f};
+        Assert.assertEquals(floatArray[0], Maximum.MaximumFloatValue(floatArray));
     }
 
     @Test
     public void givenThreeString_WhenProper_ShouldReturnMaximum() {
         value = new Maximum();
-        String intArray[] = {"z", "a", "c"};
-        Assert.assertEquals(intArray[0], Maximum.MaximumStringValue(intArray));
+        String stringArray[] = {"Z", "A", "C"};
+        Assert.assertEquals(stringArray[0], Maximum.MaximumStringValue(stringArray));
     }
 }
