@@ -1,5 +1,11 @@
 public class Maximum {
-    public static void main(String[] args) {
-        System.out.println("Welcome to find maximum problem using generic");
+    static Integer maximum = 0;
+    public static Integer findMaximumNumber(Integer[] intArray) {
+        for (Integer index : intArray) {
+            if (index.compareTo(maximum) > 0) {
+                maximum = index;
+            }
+        }
+        return maximum;
     }
 }
